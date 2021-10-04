@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/main.js"></script>
+    <title>Pokemon Battles</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="hijo vacio">
+        <img src="./assets/poke_logo.png" alt="">
+        <button onClick="Reset()">RESET</button>
+      </div>
+
+      <div class="enemy_trainer">
+        <div class="ground"></div>
+        <div class="data-pokemon">
+          <div class="ps">
+            <progress id="ps_pokemon_enemigo" value="100" max="100"></progress>
+          </div>
+          <img src="./assets/94.png" alt="">
+        </div>
+        <div class="data-trainer">
+          <img src="./assets/red.png" alt="">
+        </div>
+        
+      </div>
+
+      <div class="my_trainer">
+        <div class="ground"></div>
+        <div class="data-pokemon">
+          <div class="ps">
+            <progress id="ps_pokemon_aliado" value="100" max="100"></progress>
+          </div>
+          <img src="./assets/33.png" alt="">
+        </div>
+        <div class="data-trainer">
+          <img src="./assets/yo.png" alt="">
+        </div>
+      </div>
+
+      <div class="menu">
+        <button onClick="PeleaPokemon()">FIGHT</button>
+      </div>
+
+  </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Press_Start_2P';
+  src: URL("../assets/PressStart2P-Regular.ttf") format('truetype');
+}
+
+:root{
+  --color-border-ground: 10px solid rgb(224, 192, 96);
+  --color-ground: radial-gradient(rgb(96,208,128), rgb(72,184,104));
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  background-image: linear-gradient(to bottom, rgb(80,232,216), rgb(104,222,190), rgb(48,200,112), rgb(150,232,150), rgb(128,230,168), rgb(88,201,96));
+  height: 99%;
+  font-family: "Press_Start_2P";
+}
+
+button{
+  font-family: "Press_Start_2P";
+  background: transparent;
+}
+.container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 40% 60%;
+}
+
+
+.enemy_trainer{
+  position: relative;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.my_trainer{
+  position: relative;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.ground{
+  position: absolute;
+  border: var(--color-border-ground);
+  background-image: var(--color-ground);
+  bottom: 0;
+  z-index: -1;  
+  width: 95%;
+  height: 25%;
+  border-radius: 50%;
+}
+
+
+
+.data-pokemon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.enemy_trainer .data-trainer{
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+
+.my_trainer .data-trainer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.my_trainer .data-pokemon{
+  position: absolute;
+  right: 0;
+}
+
+.data-pokemon img:nth-child(2){
+  width: 300px;
+  height: 300px;
+}
+
+.data-trainer img:nth-child(1){
+  width: 200px;
+  height: 200px;
+}
+
+.vacio img:nth-child(1){
+  width: 500px;
+  height: 200px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  height: 50%;
+  background: white;
+  border: 10px double black;
+}
